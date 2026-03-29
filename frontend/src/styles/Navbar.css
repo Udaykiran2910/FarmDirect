@@ -1,0 +1,164 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a:hover {
+  color: #4CAF50;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar-center .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.navbar-center .nav-link:hover {
+  color: #4CAF50;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #34495e;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-btn:hover {
+  background-color: #4CAF50;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+  top: 100%;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.dropdown-content a:hover {
+  color: #4CAF50;
+}
+
+.role-badge {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.user-name {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-center {
+    gap: 15px;
+    order: 3;
+    width: 100%;
+  }
+
+  .navbar-right {
+    order: 2;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .user-name {
+    display: none;
+  }
+}

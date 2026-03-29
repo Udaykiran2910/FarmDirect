@@ -1,0 +1,123 @@
+/* Scan QR Styles */
+.qr-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.qr-container h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.qr-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.qr-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.qr-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+}
+
+.qr-display {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  border: 2px dashed #4CAF50;
+}
+
+.qr-display canvas {
+  max-width: 100%;
+}
+
+.qr-section .btn-secondary {
+  width: 100%;
+}
+
+.supply-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #2196F3;
+}
+
+.supply-info h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.supply-info p {
+  color: #666;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.blockchain-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blockchain-timeline h3 {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #4CAF50;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .qr-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-container h1 {
+    font-size: 22px;
+  }
+}

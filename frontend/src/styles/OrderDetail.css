@@ -1,0 +1,12 @@
+/* Order Detail Styles */
+.order-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.order-detail-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
